@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Family income and Expenses tracker Also Important Notes application
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/table.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/all-income.css" />
+  </head>
+  <body>
+    <div class="tracker-manager">
+      <!-- left bar starts -->
+      <div class="left-bar">
+        <div class="upper-part">
+          <div class="actions">
+            <div class="circle">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkTUjDFR58F6DuLd_Lg4waayvFA0TC7uavJA&s"
+                alt=""
+              />
+              <h4>Mamun Mirdha</h4>
+            </div>
+            <div class="circle-2"></div>
+          </div>
+        </div>
+        <!-- left content starts -->
+        <div class="left-content">
+          <ul class="action-list">
+            <li class="item">
+              <a href="./index.html">
+                <img
+                  class="feather feather-inbox"
+                  src="./assets/images/svg/inbox.svg"
+                  alt=""
+                />
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="item dropdown">
+              <a href="javascript:void(0);">
+                <img
+                  class="feather feather-star"
+                  src="./assets/images/svg/star.svg"
+                  alt=""
+                />
+                <span>Incomes</span>
+              </a>
+
+              <ul class="action-list dropdown-menu">
+                <li class="item">
+                  <a href="./all-income.html">
+                    <img
+                      class="feather feather-star"
+                      src="./assets/images/svg/star.svg"
+                      alt=""
+                    />
+                    <span>All Income</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a
+                    href="./add-income.html"
+                    onclick="clearAllLsData('singleIncomeData')"
+                  >
+                    <img
+                      class="feather feather-star"
+                      src="./assets/images/svg/star.svg"
+                      alt=""
+                    />
+                    <span>Add Income</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item dropdown">
+              <a href="javascript:void(0);">
+                <img
+                  class="feather feather-star"
+                  src="./assets/images/svg/star.svg"
+                  alt=""
+                />
+                <span>Expenses</span>
+              </a>
+
+              <ul class="action-list dropdown-menu">
+                <li class="item">
+                  <a href="./all-expenses.html">
+                    <img
+                      class="feather feather-star"
+                      src="./assets/images/svg/star.svg"
+                      alt=""
+                    />
+                    <span>All Expenses</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a
+                    href="./add-expenses.html"
+                    onclick="clearAllLsData('singLsExpensesData')"
+                  >
+                    <img
+                      class="feather feather-star"
+                      src="./assets/images/svg/star.svg"
+                      alt=""
+                    />
+                    <span>Add Expenses</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="item">
+              <a href="./important.html">
+                <img
+                  class="feather feather-hash"
+                  src="./assets/images/svg/hash.svg"
+                  alt=""
+                />
+                <span>Important Notes</span>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="./trash.html">
+                <img
+                  class="feather feather-trash"
+                  src="./assets/images/svg/trash.svg"
+                  alt=""
+                />
+                <span>Trash</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- left content ends -->
+      </div>
+      <!-- left bar ends -->
+
+      <!-- page content starts -->
+      <div class="page-content">
+        <div class="page-header"></div>
+
+        <!-- Update Status -->
+
+        <!-- Show Notes -->
+        <div id="allIncome"></div>
+      </div>
+      <!-- page content ends -->
+    </div>
+
+    <script src="./assets/js/models.js"></script>
+    <script src="./assets/js/function.js"></script>
+    <script src="./utils/utils.js"></script>
+    <script src="./assets/js/all-income.js"></script>
+  </body>
+</html>
